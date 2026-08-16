@@ -1,5 +1,5 @@
 
--- Albatros
+-- Camel
 minetest.register_craftitem("sopwith_f1_camel:sopwith_f1_camel", {
 	description = "Sopwith F1 Camel",
 	inventory_image = "sopwith_f1_camel.png",
@@ -15,13 +15,13 @@ minetest.register_craftitem("sopwith_f1_camel:sopwith_f1_camel", {
         --local nodedef = minetest.registered_nodes[node_below]
         
 		pointed_pos.y=pointed_pos.y+2.3
-		local albatros_d5_ent = minetest.add_entity(pointed_pos, "sopwith_f1_camel:sopwith_f1_camel")
-		if albatros_d5_ent and placer then
-            local ent = albatros_d5_ent:get_luaentity()
+		local plane_ent = minetest.add_entity(pointed_pos, "sopwith_f1_camel:sopwith_f1_camel")
+		if plane_ent and placer then
+            local ent = plane_ent:get_luaentity()
             if ent then
                 local owner = placer:get_player_name()
                 ent.owner = owner
-			    albatros_d5_ent:set_yaw(placer:get_look_horizontal())
+			    plane_ent:set_yaw(placer:get_look_horizontal())
 			    itemstack:take_item()
                 airutils.create_inventory(ent, ent._trunk_slots, owner)
             end

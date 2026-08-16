@@ -205,7 +205,7 @@ sopwith_camel.plane_properties = {
     _engine_sound = "sopwith_f1_camel_engine",
     _painting_texture = {"airutils_painting.png","sopwith_f1_camel_upper.png",}, --the texture to paint
     _painting_texture_2 = {"airutils_painting_2.png","sopwith_f1_camel_cabin_painting.png",}, --the texture to paint
-    _mask_painting_associations = {["sopwith_f1_camel_upper.png"] = "sopwith_f1_camel_marks.png",["sopwith_f1_camel_lower.png"] = "sopwith_f1_camel_marks.png",["sopwith_f1_camel_cabin_painting.png"] = "albatros_d5_marks.png",},
+    _mask_painting_associations = {["sopwith_f1_camel_upper.png"] = "sopwith_f1_camel_marks.png",["sopwith_f1_camel_lower.png"] = "sopwith_f1_camel_marks.png",["sopwith_f1_camel_cabin_painting.png"] = "sopwith_f1_camel_marks.png",},
     _register_parts_method = sopwith_camel.register_parts_method, --the method to register plane parts
     _destroy_parts_method = sopwith_camel.destroy_parts_method,
     _plane_y_offset_for_bullet = 1,
